@@ -18,6 +18,9 @@ public class TestServer extends ServerRunnable {
 
     @Override
     public void connectionAccepted(Socket client) {
+    	User user = new User(client);
+    	Thread thread = new Thread(user);
+    	thread.start();
         
     }
 
