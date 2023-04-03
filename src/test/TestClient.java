@@ -5,7 +5,7 @@ import com.arquitectura.net.client.ClientRunnable;
 public class TestClient extends ClientRunnable{
 
 	public TestClient() {
-		super("localhost", 2023);
+		super("localhost", 8080);
 	}
 	
 	public static void main(String[] args) {
